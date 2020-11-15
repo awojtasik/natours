@@ -12,3 +12,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+// MEDIA QUERY MENAGER
+// 1em = 16px
+
+@mixin respond($breakpiont) {
+    @if $breakpiont == phone {
+        @media (max-width: 37.5em) { @content }; //600/16
+    }
+    @if $breakpiont == tab-port {
+        @media (max-width: 56.25em) { @content }; //900/16
+    }
+    @if $breakpiont == tab-land {
+        @media (max-width: 75em) { @content }; //1200/16
+    }
+    @if $breakpiont == big-desktop {
+        @media (mim-width: 112.5) { @content }; //1800/16
+    }
+}
