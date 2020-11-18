@@ -75,7 +75,17 @@
 
     &:not(:last-child) {
         margin-bottom: $gurrer-vertical;
+
+        @include respond(tab-port) {
+            margin-bottom: $gurrer-vertical-small;
+        }
     }
+
+    @include respond(tab-port) {
+        max-width: 50rem;
+        padding: 0 3rem;
+    }
+
     
     @include clearfix;
 
@@ -84,6 +94,16 @@
 
         &:not(:last-child) {
             margin-right: $gurrer-horizontal;
+
+            @include respond(tab-port) {
+                margin-right: 0;
+                margin-bottom: $gurrer-vertical-small;
+            }
+
+        }
+
+        @include respond(tab-port) {
+            width: 100% !important;
         }
     }
 
