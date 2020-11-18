@@ -693,7 +693,12 @@ body {
     @media (max-width: 56.25em) {
       .footer__copyright {
         width: 100%;
-        float: none; } }
+        float: none;
+        text-align: center; } }
+    @media (max-width: 37.5em) {
+      .footer__copyright {
+        font-size: 1.2rem;
+        text-align: center; } }
 
 .header {
   height: 95vh;
