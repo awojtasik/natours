@@ -4,6 +4,7 @@
   "description": "Landing page",
   "main": "index.js",
   "scripts": {
+    // npm run compile:sass
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "Agnieszka",
